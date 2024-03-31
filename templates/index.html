@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice creator</title>
+    <!-- <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <h1>Invoice creator</h1>
+    <form action="/inputdata">
+        <input type="text" name="workinghours" id="workinghours" placeholder="Enter working hours" />
+        <p></p>
+        <input type="text" name="rate" id="rate" placeholder="Enter the rate" />
+        <p></p>
+        <input type="text" name="data_rate" id="data_rate" placeholder="Exchange date (YYYY/MM/DD)"/>
+        <p></p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

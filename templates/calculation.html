@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <form action="/fillingsheet">
+
+        <p>Working hours : <b>{{working_hrs}}</b></p>
+        <input type="hidden" name = "working_hrs" value="{{working_hrs}}"/>
+
+        <p>Working days : <b>{{working_days}}</b></p>
+        <input type="hidden" name = "working_days" value="{{working_days}}"/>
+        <br>
+        
+        <p>Amount : <b>{{ amount_nr }}</b></p>
+        <input type="hidden" name = "amount_nr" value="{{amount_nr}}"/>
+
+        <p>Amount EN : <b>{{amount_en}}</b></p>
+        <input type="hidden" name = "amount_en" value="{{amount_en}}"/>
+
+        <p>Amount PL : <b>{{amount_pl}}</b></p>
+        <input type="hidden" name = "amount_pl" value="{{amount_pl}}"/>
+        <br>
+        
+        <p>Exchange rate date : <b>{{date_exchng}}</b></p>
+        <input type="hidden" name = "date_exchng" value="{{date_exchng}}"/>
+
+        <p>Exchange date id : <b>{{kurs_tableid}}</b></p>
+        <input type="hidden" name = "kurs_tableid" value="{{kurs_tableid}}"/>
+
+        <p>Exchange rate value : <b>{{rate_exchange}}</b></p>
+        <input type="hidden" name = "rate_exchange" value="{{rate_exchange}}"/>
+        <br>
+
+        <p>Invoice issue date (dd/mm/yyyy)<br> <input  type="text" name="fv_issue_date" id="fv_issue_date" placeholder="Enter invoice issue date (dd/mm/yyyy)" /></p>
+        <p>Seller<br> <input  type="text" name="seller" id="seller" placeholder="Enter seller full information" /></p>
+        <p>Buyer<br> <input  type="text" name="buyer" id="buyer" placeholder="Enter buyer full information" /></p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+    
+</html>
